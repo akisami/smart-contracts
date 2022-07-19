@@ -1,0 +1,9 @@
+from web3 import Web3
+import requests
+
+s = requests.Session()
+s.headers.update({'authorization': 'Basic ZZZZ'})
+
+# HTTPProvider:
+w3 = Web3(Web3.HTTPProvider('https://apis.ankr.com/XXXX/YYYY/binance/full/main', session=s))
+w3.isConnected()
