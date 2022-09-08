@@ -1,0 +1,30 @@
+// SPDX-License-Identifier:MIT
+pragma solidity^0.8.8;
+contract Maureen {
+    
+    
+    // This gets initialized to zero!
+    // <- This means that this section is a comment!
+    uint256 public coin;
+    People public person = People({coin: 2, name: "Maureen" });
+
+    struct People {
+    uint256 coin;
+    string name;
+}
+    //uint256[] public nextnumberslist;
+    People[] public people;
+
+
+    function store(uint256 _coin) public {
+        coin = _coin;
+        
+    }
+
+    function retrieve() public view returns(uint256){
+        return  coin; 
+    }
+    function addPerson(string memory _name, uint256 _coin) public {
+        people.push(People(_coin, _name));
+    }
+}
