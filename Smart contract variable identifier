@@ -1,0 +1,11 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.8;
+contract maureen{
+    // boolean,uint, int, address, bytes
+bool hasfavouritenumber = true;
+uint256 favoritenumber = 5;
+string favoritenumberInText = "Five";
+int256 favoriteint = -5;
+address myaddress = 0xc8C400787621aa2fe113c8EFa3A4eb9E1c0C2603;
+bytes32 favoriteBytes ="cat";
+}
